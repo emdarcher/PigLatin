@@ -48,8 +48,11 @@ public String pigLatin(String sWord)
 //postcondition: returns the pig latin equivalent of sWord
 {
 	int first_vowel_out = findFirstVowel(sWord);
-	if((first_vowel_out == -1) || (first_vowel_out== 0)){
+	if((first_vowel_out == -1)) {
 		return sWord + "ay";
+	}
+	else if ((first_vowel_out== 0)){
+		return sWord + "way";
 	} 
 	else{
 		if((sWord.charAt(0)=='q')&&(sWord.charAt(1)=='u')){
